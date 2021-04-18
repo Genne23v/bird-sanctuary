@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body {
+    margin: 0 2em;
+    font-family: "Open Sans";
+}
+
+header nav {
+    margin: 1em 0;
+}
+
+header h1 {
+    font-family: "Poppins", "Open Sans";
+    font-weight: 800;
+}
+
+h2 {
+    font-family: "Poppins", "Open Sans";
+    font-weight: 400;
+}
+
+form {
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 1em;
+    border: 1px solid darkgray;
+    border-radius: 8px;
+}
+
+.field-each {
+    margin: 1.5em 0;
+    min-width: 400px;
+}
+
+button {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 1em 0;
+}
+
+#inputGroupFile02 {
+    margin-bottom: 4px;
+}
+
+.d-flex input {
+    margin: 1em 1em;
+    width: 200px;
+}
+
+.form-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.required>span {
+    display: inline-block;
+}
+
+.required {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: .2em;
+    margin-right: .5em;
+}
+
+.text-danger {
+    font-size: .8em;
+}
+
+.optional {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+#img-url {
+    margin-bottom: 4px;
+}
+
+
+/* required field implementation */
+
+
+/* span {
+    color: red;
+} */
