@@ -6,9 +6,16 @@
     <meta charset="UTF-8">
     <title>Ontario Bird Sanctuary</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -16,8 +23,7 @@
         <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">OBS Toronto</a>
-                    <p>OBS is ...</p>
+                    <a class="navbar-brand" href="#"><span id="accent-obs">OBS</span><span id="accent"> Toronto</span></a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -29,6 +35,7 @@
                     </ul>
                 </div>
             </div>
+
         </nav>
 
         <!-- Replace the text and images if you want -->
@@ -73,12 +80,20 @@
 
 
     <main>
-
+        <p id="welcome">Welcome to Ontario Bird Sanctuary</p>
+        <a id="fancy-box-link" data-fancybox data-src="#hidden-content" href="#hidden-content">
+            <i class="material-icons">
+        health_and_safety
+            </i>
+            <span>Important Announcement</span></a>
         <!-- Place the HTML Content here. Use different HTML elements which we discussed in all the previous classes. 
         You must include one Responsive Table here. -->
     </main>
 
     <footer>
+        <div id="general-info">
+            <p>Ontario Bird Sanctuary, Canada</p>
+        </div>
         <div class="contact-container">
             <div class="social-media" id="email">
                 <a href="#"><img src="./img/email.png" width="30"></a>
@@ -95,9 +110,32 @@
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <div style="display: none;" id="hidden-content">
+        <span class="material-icons">
+        priority_high</span><span>Important Notice</span>
+        <p>Ontario Bird Sanctuary is closing temporarily to the public starting April 17 as part of Ontario's response to Covid-19. We will reopen when allowed.
+        </p>
+    </div>
+
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+    <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <script>
+        $(document).ready(function() {
+            $("#fancy-box-link").fancybox({
+                width: '50%',
+                closeClick: true,
+                fade: true
+            });
+        });
+    </script>
 </body>
 
 </html>

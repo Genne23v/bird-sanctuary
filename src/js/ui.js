@@ -6,11 +6,11 @@ function populateBreedFromDropdown(breeds) {
     let dropdownMenu = document.getElementById('dropdown-menu');
 
     breeds.forEach(breed => {
-        let dropdownItem = document.querySelector('a');
-        dropdownItem.id = breed;
+        let dropdownItem = document.createElement('a');
+        dropdownItem.id = breed.species_name;
         dropdownItem.className = 'dropdown-item';
         dropdownItem.href = '#';
-        dropdownItem.innerText = titleCase(breed);
+        dropdownItem.innerText = titleCase(breed.species_name);
 
         dropdownMenu.appendChild(dropdownItem);
     });

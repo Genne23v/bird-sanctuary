@@ -59,19 +59,19 @@
     <script src="js/ui.js"></script>
     <script>
         function start() {
-            getBirdBreeds(function(breedList) {
+            let breedList = getBirdBreeds();
 
-                populateBreedFromDropdown(breedList);
+            populateBreedFromDropdown(breedList);
 
-                let dropdownMenu = document.querySelector('#dropdown-menu');
-                dropdownMenu.addEventListener('click', function(event) {
-                    let dropdownSelection = event.target;
-                    let breed = dropdownSelection.id;
+            let dropdownMenu = document.querySelector('#dropdown-menu');
+            dropdownMenu.addEventListener('click', function(event) {
+                debugger;
+                let dropdownSelection = event.target;
+                let breed = dropdownSelection.id;
+                let image = dropdownSelection.image_url;
 
-                    getBreedData(breed, function(images) {
-                        showBreed(breed, images);
-                    });
-                });
+                showBreed(breed, image);
+
             });
         }
 
