@@ -1,87 +1,159 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Enter your First_Name and Last_Name, Student Id and Course Name here -->
+
+<head>
+    <!-- Name: Wonkeun No, ID: 145095196, WEB222 NJJ-->
     <meta charset="UTF-8">
     <title>Ontario Bird Sanctuary</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
     <header>
-      <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
-        <div class="container">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">OBS Toronto</a>
-          </div>
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><span id="accent-obs">OBS</span><span id="accent"> Toronto</span></a>
+                    
+                </div>
 
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">About Us</a></li>
-              <li><a href="add-Bird.html">Register Animal</a></li>
-              <li><a href="fetch-data.html">Select Bird</a></li>
-            </ul>
-          </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="add-Bird.html">Register Bird</a></li>
+                        <li><a href="fetch-data.html">Select Bird</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- Replace the text and images if you want -->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+
+            <div class="carousel-inner" role="listbox">
+                <div class="active item">
+                    <div class="banner" style="background-image: url(https://images.unsplash.com/photo-1480044965905-02098d419e96?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);"></div>
+                    <div class="carousel-caption">
+                        <h2 class="animated bounceInRight" style="animation-delay: 1s">We preserve <span> Birds</span> here</h2>
+                        <h3 class="animated bounceInLeft" style="animation-delay: 2s">Ontario Bird Sanctuary</h3>
+                        <p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">Contact Us</a></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="banner" style="background-image: url(https://images.unsplash.com/photo-1444464666168-49d633b86797?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80);"></div>
+                    <div class="carousel-caption">
+                        <h2 class="animated bounceInRight" style="animation-delay: 1s">We take special care of <span> Endangered Birds</span></h2>
+                        <h3 class="animated bounceInLeft" style="animation-delay: 2s">Ontario Bird Sanctuary</h3>
+                        <p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">Contact Us</a></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="banner" style="background-image: url(https://images.unsplash.com/photo-1553736277-055142d018f0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=953&q=80);"></div>
+                    <div class="carousel-caption">
+                        <h2 class="animated bounceInRight" style="animation-delay: 1s">Unique and Special<span> Pet Birds</span></h2>
+                        <h3 class="animated bounceInLeft" style="animation-delay: 2s">Ontario Bird Sanctuary</h3>
+                        <p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">Contact Us</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </nav>
-
-      <!-- Replace the text and images if you want -->
-      <div  id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-
-
-        <div class="carousel-inner" role="listbox">
-          <div class="active item">
-            <div class="banner" style="background-image: url(https://images.unsplash.com/photo-1480044965905-02098d419e96?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);"></div>
-            <div class="carousel-caption">
-              <h2 class="animated bounceInRight" style="animation-delay: 1s">We preserve <span> Birds</span> here</h2>
-              <h3 class="animated bounceInLeft" style="animation-delay: 2s">Ontario Bird Sanctuary</h3>
-              <p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">Contact Us</a></p>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="banner" style="background-image: url(https://images.unsplash.com/photo-1444464666168-49d633b86797?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80);"></div>
-            <div class="carousel-caption">
-              <h2 class="animated bounceInRight" style="animation-delay: 1s">We take special care of <span> Endangered Birds</span> here</h2>
-              <h3 class="animated bounceInLeft" style="animation-delay: 2s">Ontario Bird Sanctuary</h3>
-              <p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">Contact Us</a></p>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="banner" style="background-image: url(https://images.unsplash.com/photo-1553736277-055142d018f0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=953&q=80);"></div>
-            <div class="carousel-caption">
-              <h2 class="animated bounceInRight" style="animation-delay: 1s">Unique and Special<span> Pet Birds</span></h2>
-              <h3 class="animated bounceInLeft" style="animation-delay: 2s">Ontario Bird Sanctuary</h3>
-              <p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">Contact Us</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
     </header>
 
 
     <main>
-      
+        <div class="text-rollover">
+            <div id="welcome" data-fancybox data-src="#rollover-content" href="javascript:;">
+                Welcome to Ontario Bird Sanctuary</div>
+            <div id="rollover-content" >
+                    <p>Ontario Bird Sanctuary is the largest wild bird preservation site, located in outside of Toronto Ontario, Canada. <br>
+                        There are 123 species including 41 endangered species in the sanctuary.<br>
+                        OBS is non-profit organization. 32 volunteered workers take care of birds and environment here.                         Your donation will support our bird preservation. We will appreciate your support!</p>
+                </div>
+        </div>    
+        
+        
         <!-- Place the HTML Content here. Use different HTML elements which we discussed in all the previous classes. 
         You must include one Responsive Table here. -->
     </main>
 
     <footer>
-      <!-- Add Social Media Icons here and link them with random websites of your choice -->
-      
+        <a id="fancy-box-link" data-fancybox data-src="#hidden-content" href="javascript:;">
+            <i class="material-icons">
+        health_and_safety
+            </i>
+            <span>Important Announcement</span></a>
+        <div class="contact-container">
+            <div class="social-media" id="email">
+                <a href="#"><img src="./img/email.png" width="25"></a>
+            </div>
+            <div class="social-media" id="facebook">
+                <a href="#"><img src="./img/f_logo_RGB-White_58.png" width="25"></a>
+            </div>
+            <div class="social-media" id="instgram">
+                <a href="#"><img src="./img/instragram_white.png" width="25"></a>
+            </div>
+            <div class="social-media" id="twitter">
+                <a href="#"><img src="./img/2021 Twitter logo - white.png" width="25"></a>
+            </div>
+        </div>
     </footer>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <div class="popup" style="display: none;" id="hidden-content" >
+        <div id="popup-title" style="font-size: 28px;  font-weight: 800px;">
+            <i class="material-icons" style="color: black;">
+                priority_high</i><span>Important Notice</span>
+        </div>
+        <p>Ontario Bird Sanctuary is closing temporarily to the public starting April 17 as part of Ontario's response to COVID-19. We will reopen when allowed.
+        </p>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  </body>
+    <script>
+        $(document).ready(function() {
+            $("#fancy-box-link").fancybox({
+                
+                closeClick: true,
+                fade: true
+            });
+        });
+        $(document).ready(function() {
+            $("#welcome").fancybox({
+                showCloseButton: false,
+                fade: true
+            }).hover(function() {
+            $("#rollover-content").show();
+        }, function() {
+            $("#rollover-content").hide();
+        });
+});
+    </script>
+</body>
+
 </html>

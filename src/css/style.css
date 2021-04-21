@@ -1,105 +1,207 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+    @import url("https://fonts.googleapis.com/css?family=Raleway");
+    * {
+        box-sizing: border-box;
+    }
+    /*carousels and navbar*/
+    
+    .navbar-inverse {
+        background-color: transparent;
+        border-color: transparent;
+    }
+    
+    .navbar-inverse .navbar-brand {
+        color: aliceblue;
+        font-size: 48px;
+        padding: 40px 20px;
+        font-weight: 940;
+        text-shadow: 1px 1px 2px black;
+    }
+    
+    .navbar-brand{
+        position: fixed;
+        left: .4em;
+        top: 0em;
+    }
+    .navbar-header {
+        
+        top: 0;
+        
+    }
+    
+    #accent-obs {
+        color: #1292fa;
+    }
+    
+    #accent {
+        color: #ec4a41;
+    }
+    
+    #rollover-content {
+        position: fixed;
+        display: inline-block;
+        top: 100px;
+        width: 94vw;
 
-*{
-  box-sizing: border-box;
-}
-
-/*carousels and navbar*/
-.navbar-inverse{
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.navbar-inverse .navbar-brand{
-  color:aliceblue;
-  font-size: 40px;
-  padding: 40px 15px;
-  font-weight: 940;
-}
-
-.nav .navbar-nav .navbar-right{
-  margin: 25px 0;
-}
-
-.navbar-inverse .navbar-nav>li>a{
-  color:#fff;
-  text-transform: uppercase;
-}
-
-body{
-  padding:1em;
-  font-family: 'Poppins', sans-serif;
-}
-
-header .carousel-inner .item{
-  height:100vh;
-}
-
-.banner{
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
-
-.carousel-caption{
-  padding-bottom: 245px;
-  font-family: 'Poppins';
-}
-
-.carousel-caption h2{
-  font-size: 70px;
-  text-transform:uppercase;
-  font-weight: bold;
-}
-
-.carousel-caption h2 span{
-  color: orange;
-}
-
-
-.carousel-caption a{
-  background: #EDBB00;
-	padding: 15px 35px;
-	display: inline-block;
-	margin-top: 15px;
-	color: #fff;
-	text-transform: uppercase;
-	border-radius: 25px;
-}
-
-.carousel-indicators .active{
-  background-color: #EDBB00;
-  border-color: #EDBB00;
-}
-
-.carousel-control.right{
-  background-image: none;
-}
-
-.carousel-control.left{
-  background-image: none;
-}
-
-/* responsive css*/
-@media only screen and (min-width: 768px)and (max-width: 990px){
-  .carousel-caption {
-		padding-bottom: 350px;
-	}
-	.carousel-caption h2 {
-		font-size: 50px;
-	}
-}
-
-
-@media only screen and (max-width: 768px) {
-	.navbar-inverse .navbar-brand {
-		font-size: 30px;
-		padding: 20px 15px;
-	}
-	.navbar-collapse {
-		background: rgba(0, 0, 0, 0.5);
-	}
-}
+        background-color: rgba(0, 0, 0, 0.349);
+        color: white;
+        font-family: 'Raleway';
+        font-size: 14px;
+        font-weight: 500;
+        padding: 6px 8px;
+        margin-left: 10px ;
+        border-radius: 3px;
+    }
+    #rollover-content p{
+        margin: 0;
+    }
+    .nav .navbar-nav .navbar-right {
+        margin:0;
+        align-items: center;
+    }
+    
+    .navbar-right {
+        margin-top: 1.8em;
+        margin-right: 0em;
+    }
+    
+    .navbar-inverse .navbar-nav>li>a {
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .container{
+        margin-right: .3em;
+    }
+    body {
+        padding: 1em;
+        font-family: 'Poppins', sans-serif;
+        overflow: hidden;
+    }
+    
+    header .carousel-inner .item {
+        height: 100vh;
+    }
+    
+    .banner {
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 95vh;
+    }
+    
+    .carousel-caption {
+        position: fixed;
+        top: 180px;
+        padding-bottom: 45px;
+        font-family: 'Poppins';
+    }
+    
+    .carousel-caption h2 {
+        font-size: 70px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .carousel-caption h2 span {
+        color: orange;
+    }
+    
+    .carousel-caption a {
+        background: #EDBB00;
+        padding: 15px 35px;
+        display: inline-block;
+        margin-top: 15px;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 25px;
+    }
+    
+    .carousel-indicators .active {
+        background-color: #EDBB00;
+        border-color: #EDBB00;
+    }
+    
+    .carousel-control.right {
+        background-image: none;
+    }
+    
+    .carousel-control.left {
+        background-image: none;
+    }
+    /* #annoucement {
+        position: fixed;
+        top: 0%;
+        height: 200px;
+        width: 95%;
+        margin: 0 10px;
+        background-color: rgba(0, 0, 0, 0.205);
+    } */
+    #welcome {
+        position: fixed;
+        font-size: 24px;
+        text-shadow: 0px .5px 1px black;
+        top: 68px;
+        left: 25px;
+        color: orange;
+        font-weight: 600;
+    }
+    
+    #fancy-box-link {
+        position: fixed;
+        bottom: 1.4em;
+    }
+    #fancy-box-link>span {
+        text-decoration: none;
+        text-align: center;
+        font-size: 16px;
+        color: white;
+        /* padding: 0 4px 8px; */
+        margin: 0px;
+        /* line-height: 1; */
+    }
+    
+    .material-icons {
+        font-size: 24px;
+        color: white;
+        margin-left: .2em;
+        vertical-align: middle;
+    }
+    
+    .contact-container {
+        position:fixed;
+        height: 50px;
+        right: 3%;
+        bottom: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+    .popup {
+        width: 60%;
+        font-size: 18px;
+    }
+    
+    .social-media {
+        flex: 1;
+        margin: 1em .5em;
+    }
+    /* responsive css*/
+    
+    @media only screen and (min-width: 768px)and (max-width: 990px) {
+        .carousel-caption {
+            padding-bottom: 350px;
+        }
+        .carousel-caption h2 {
+            font-size: 50px;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .navbar-inverse .navbar-brand {
+            font-size: 30px;
+            padding: 20px 15px;
+        }
+        .navbar-collapse {
+            background: rgba(0, 0, 0, 0.5);
+        }
+    }
